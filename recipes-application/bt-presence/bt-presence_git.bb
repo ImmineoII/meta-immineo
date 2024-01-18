@@ -8,6 +8,8 @@ SRC_URI[sha256sum] = "7766c49947c6574c8fb35d0dfcd795ada1e4e457ab5b15499d7000909b
 
 PV = "1.0+git${SRCPV}"
 
+S = "${WORDKIR}/git"
+
 FILES:${PN} += " \
 	${bindir}/bt-presence \
 	"
