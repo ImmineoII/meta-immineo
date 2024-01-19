@@ -1,0 +1,13 @@
+[Unit]
+Description= Bluetooth device presence checker
+Requires=bluetooth.target
+After=bluetooth.target
+
+[Service]
+Type=forking 
+ExecStart=/usr/bin/bt-presence -d
+Restart=always
+RestartSec=15
+
+[Install]
+WantedBy=multi-user.target
